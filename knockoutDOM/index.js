@@ -1,30 +1,7 @@
-// Notify me of everything!
-var observerConfig = {
-    attributes: true,
-    childList: false,
-    characterData: false,
-    attributeFilter: ["style"]
-};
-
-// Node, config
-// In this case we'll listen to all changes to body and child nodes
-
 
 $(document).ready(function () {
 
 
-  /*  var observer = new MutationObserver(function (mutations) {
-
-        mutations.forEach(function (mutation) {
-            if (mutation.attributeName === 'style') {
-                var styleLeft = window.getComputedStyle(mutation.target,null).getPropertyValue("left");
-                var styleTop = window.getComputedStyle(mutation.target,null).getPropertyValue("top");
-                console.log("left:"+styleLeft);
-                console.log("top:"+styleTop);
-               //console.log($("#"+mutation.target.id).position().left);
-            }
-        });
-    });*/
 
     var zoneModel =
     {
