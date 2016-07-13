@@ -1,0 +1,180 @@
+
+
+
+.dragNorth
+{
+    left:50%;
+    margin-left:-3px;
+    margin-top:-3px;
+}
+.dragNorthWest
+{
+    margin-left:-5px;margin-top:-3px
+}
+.dragNorthEast
+{
+
+    left:100%; margin-left:-3px; margin-top:-3px
+}
+.dragEast
+{
+    left:100%; margin-left:-3px; top:50%; margin-top:-3px
+}
+.dragSouth
+{
+    left:50%; margin-left:-3px; top:100%;margin-top:-3px
+}
+.dragWest
+{
+    margin-left:-3px; top:50%; margin-top:-3px
+}
+.dragSouthWest
+{
+    margin-left:-3px; top:100%;margin-top:-3px
+}
+.dragSouthEast
+{
+
+    left:100%; margin-left:-3px; top:100%; margin-top:-3px
+}
+
+
+
+
+.draghandle{
+    height:6px;
+    width:6px;
+    position:absolute;
+    background:red;
+    border: 1px solid black;
+}
+#connections {
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    z-index: 0;
+    overflow: visible;
+}
+
+#targetNodes {
+    position: absolute;
+    width: 100%;
+    height: 500px;
+
+    overflow: visible;
+}
+
+#svgContainer {
+    overflow: visible;
+
+}
+
+#svg1 {
+
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    position: absolute;
+    z-index: 10;
+
+    pointer-events:none;
+}
+#svg1 * {
+    pointer-events:none;
+}
+
+
+#document {
+
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    transform-origin: 0 0;
+
+}
+
+#zoomable
+{
+    transform-origin: 0 0;
+    position: absolute;
+
+   background-color: yellow;
+
+}
+
+#sourceContainer {
+
+    height: 800px;
+    overflow: auto;
+
+
+}
+.anchorContainer
+{
+    position: relative;
+}
+.anchor
+{
+    position: absolute;
+
+    background-color:green;
+    z-index: 1000;
+}
+
+.target{
+
+    height:100px;
+    background-color: blue;
+    border-bottom: 1px solid;
+}
+
+#targetsContainer {
+    z-index: 1;
+    width:400px;
+    height:400px;
+    position: absolute;
+    top:0;
+    left:400px;
+
+
+}
+
+/*#fieldContainer
+{
+    position: absolute;
+    z-index: 101;
+}*/
+
+.field {
+
+    /*width:50px;
+    height:50px;*/
+    background-color: yellow;
+    opacity: 0.5;
+    position: absolute;
+    z-index: 20;
+}
+
+rect {
+    border-bottom: 1px solid;
+    fill: yellow;
+    fill-opacity:0.4;
+    transform-origin: 0 0;
+}
+
+line {
+    stroke-width: 2;
+    stroke: black;
+    overflow: visible;
+
+    transform-origin: 0 0;
+}
+
+.no-padding
+{
+    padding:0;
+}
+
+
+
+

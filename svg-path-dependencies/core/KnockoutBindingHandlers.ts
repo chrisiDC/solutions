@@ -1,0 +1,4 @@
+interface KnockoutBindingHandlers {
+    jqDraggableResizable: KnockoutBindingHandler;
+}
+

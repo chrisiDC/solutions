@@ -1,0 +1,13 @@
+{
+  "name": "docuware_svg",
+  "dependencies": {},
+  "globalDependencies": {
+    "bootstrap": "registry:dt/bootstrap#3.3.5+20160619023404",
+    "chance": "registry:dt/chance#0.7.3+20160317120654",
+    "jquery": "registry:dt/jquery#1.10.0+20160704162008",
+    "jqueryui": "registry:dt/jqueryui#1.9.0+20160627030821",
+    "knockout": "registry:dt/knockout#0.0.0+20160512130947",
+    "lodash": "registry:dt/lodash#3.10.0+20160619033623",
+    "node": "registry:dt/node#6.0.0+20160621231320"
+  }
+}

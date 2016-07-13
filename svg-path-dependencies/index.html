@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./bower_components/jquery-ui/themes/base/jquery-ui.min.css">
+    <link rel="stylesheet" href="index.css">
+
+
+</head>
+<body>
+
+
+<svg id="svg1" xmlns="http://www.w3.org/2000/svg" version="1.1" baseProfile="b">
+
+    <!-- ko foreach: paths -->
+    <path data-bind="attr:{id:id,d:svgPath}" stroke="black" fill="transparent"/>
+    <!-- /ko -->
+</svg>
+
+<!-- ko foreach: anchors -->
+<div class="anchor" data-bind="attr:{id:id},style:{left:x()+'px',top:y()+'px',width:width()+'px',height:height()+'px'}"></div>
+<!-- /ko -->
+
+<div class="" id="sourceContainer">
+
+    <!-- ko foreach: zones -->
+    <div class="field"
+         data-bind="jqDraggableResizable:$data, attr:{id:id},style:{left:x()+'px',top:y()+'px',width:width()+'px',height:height()+'px'}">
+       <!-- <div id="n" class="draghandle dragNorth"></div>
+        <div id="nw" class="draghandle dragNorthWest"></div>
+        <div id="ne" class="draghandle dragNorthEast"></div>
+        <div id="s" class="draghandle dragSouth"></div>
+        <div id="sw" class="draghandle dragSouthWest"></div>
+        <div id="se" class="draghandle dragSouthEast"></div>
+        <div id="w" class="draghandle dragWest"></div>
+        <div id="e" class="draghandle dragEast"></div>-->
+    </div>
+    <!-- /ko -->
+</div>
+
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+<script src="bower_components/knockout/dist/knockout.js"></script>
+<script src="bower_components/chance/dist/chance.min.js"></script>
+
+
+<script src="bundle.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+{
+  "name": "svg-path-dependencies",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc -p tsconfig.json -w",
+    "server": "browser-sync start --config bs-config.js",
+    "watchify": "watchify index.js -o bundle.js -d -v",
+    "browserify": "browserify index.js > bundle.js --im -d",
+    "dev": "concurrently  \"npm run watchify\"  \"npm run server\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+
+  }
+}
